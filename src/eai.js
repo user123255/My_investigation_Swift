@@ -1,5 +1,9 @@
 
+
 // eai.js
+
+import './contacts.js';
+
 const emergencyNumbers = {
     police: "112",
     ambulance: "912",
@@ -170,4 +174,7 @@ if (emergencyAiModal && emergencyAiInput && emergencyAiSubmit && emergencyAiInpu
     });
 } else {
     console.log("Emergency AI elements not found"); // Debug log
+
 }
+
+<script src="./contacts.js"></script>

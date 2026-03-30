@@ -1,1 +1,6 @@
+
+# Ignore build folder
+dist/bubdle.js
+
+# Ignore environment file
 .env
