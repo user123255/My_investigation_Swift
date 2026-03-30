@@ -175,6 +175,8 @@ if (emergencyAiModal && emergencyAiInput && emergencyAiSubmit && emergencyAiInpu
 } else {
     console.log("Emergency AI elements not found"); // Debug log
 
+
 }
 
 <script src="./contacts.js"></script>
+
