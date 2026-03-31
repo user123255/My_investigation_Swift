@@ -122,13 +122,37 @@ npx vite preview
 
 The application is deployed across multiple servers with load balancing to ensure availability and performance.
 
+📄 Deployment Steps
+1. Application Deployment
+Installed Node.js and Nginx on both web servers
+Cloned the repository from GitHub
+Installed dependencies using npm install
+Built the application using npm run build
+Deployed static files from dist/ to /var/www/html/
+
+3. Web Server Configuration
+Configured Nginx to serve static files
+Enabled SPA routing using try_files
+Restarted Nginx to apply changes
+
+5. Load Balancer Setup
+Installed HAProxy on the load balancer server
+Configured frontend to listen on port 80
+Configured backend with Web01 and Web02 servers
+Used roundrobin load balancing algorithm
+
+7. Testing
+Verified application access via individual web servers
+Accessed application through load balancer IP
+Confirmed traffic distribution between servers
+
 ---
 
 ## 📅 Note on Dates
 
 Some records may display dates from 2025. These were generated during the initial testing phase using Firestore’s automatic timestamp system.
 
-Since the database is externally managed, these original timestamps could not be modified. To maintain consistency, the application adjusts how dates are displayed so that users see the current working year (2026), while the original data remains unchanged.
+Since the database is externally managed, these original timestamps could not be modified. To maintain consistency, the application adjusts how dates are displayed so that users see the current date.
 
 ---
 
