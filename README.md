@@ -26,7 +26,7 @@ This project was developed as part of my university coursework, with the goal of
 
 ## 🌐 Access the Deployed Website
 
-URL:  http://localhost:3000/#
+URL:  https://nyayath.tech
 
 ---
 
